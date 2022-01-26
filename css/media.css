@@ -1,0 +1,147 @@
+@media (max-width: 800px) {
+
+  body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    background-color: #e9faf3 !important;
+  }
+
+  .aside__discription {
+    background-color: #e9faf3;
+    min-width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 700px;
+    position: relative;  
+  }
+  .page__logo {
+    margin-top: 50px;
+  }
+  .disc__img,.disc__img>img {
+    display: none;
+  }
+  .aside__discription h1 {
+    line-height: 1.0;
+    color: var(--color1);
+    text-align: center;
+  }
+  .login__section .logs {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    display: none;
+  }
+  .logs span{
+      font-size: 1em;
+  }
+ 
+.media__logins {
+    background-color: #fff;
+    border-radius: 40px;
+    width: 80%;
+    position: absolute;
+    left: 50px;
+    bottom: 500px;
+    padding: 30px;
+    box-shadow: 0px 10px 60px rgba(0, 76, 255, 0.08);
+  }
+  .media__logins h3 {
+    font-size: 1rem;
+    color: var(--color1);
+    font-weight: bold;
+  }
+}
+/* 
+@media (min-width: 199px) and (max-width: 399px)  {
+
+    .aside__discription {
+      background-color: #e9faf3;
+      min-width: 100%;
+      padding-top: 10px;
+      padding-left: 10px;
+      height: 100%;
+      position: relative;  
+    }
+  
+    body {
+      font-family: "Roboto", sans-serif;
+      overflow-x: hidden;
+      background-color: #e9faf3;
+    }
+    
+    .disc__img,.disc__img>img {
+      display: none;
+    }
+    .aside__discription h1 {
+  
+      line-height: 1.0;
+      color: var(--color1);
+      text-align: center;
+    }
+    .login__section .logs {
+      position: absolute;
+      bottom: 777px;
+      left: 20px;
+    }
+    .logs span{
+        font-size: 1em;
+    }
+   
+  .media__logins {
+      background-color: #fff;
+      border-radius: 40px;
+      position: absolute;
+      left: 100px;
+      /* bottom: 0px; */
+      /* padding: 30px;
+      box-shadow: 0px 10px 60px rgba(0, 76, 255, 0.08);
+    }
+  } */ 
+
+  /* @media (min-width: 400px) and (max-width: 800px) {
+
+    .aside__discription {
+      background-color: #e9faf3;
+      min-width: 100%;
+      padding-top: 10px;
+      padding-left: 10px;
+      height: 100%;
+      position: relative;  
+    }
+  
+    body {
+      font-family: "Roboto", sans-serif;
+      overflow-x: hidden;
+      background-color: #e9faf3;
+    }
+    
+    .disc__img,.disc__img>img {
+      display: none;
+    }
+    .aside__discription h1 {
+  
+      line-height: 1.0;
+      color: var(--color1);
+      text-align: center;
+    }
+    .login__section .logs {
+      position: absolute;
+      bottom: 777px;
+      left: 20px;
+    }
+    .logs span{
+        font-size: 1em;
+    }
+   
+  .media__logins {
+      background-color: #fff;
+      border-radius: 40px;
+      position: absolute;
+      left: 100px;
+      bottom: 0px;
+      padding: 30px;
+      box-shadow: 0px 10px 60px rgba(0, 76, 255, 0.08);
+    }
+  }  */
+  
+  

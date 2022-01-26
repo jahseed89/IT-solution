@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='./header.css' rel="stylesheet" />
+    <link href="./login.css" rel="stylesheet"/>
+    <link href='./loginForm.css' rel="stylesheet" />
+</head>
+
+
+<body>
+    <header class="header none">
+        <div class="header__container">
+          <div class="header__brand">
+            <img src="itsln_logo.png" alt="Brand Logo" />
+          </div>
+    
+    
+    <div class='loginNav'>
+        <Link to={SIGNUP_ROUTE}>
+            <span class='loginNav__span'>Not a member?</span>
+            <span class='loginNav__span'>Sign up now</span>
+        </Link>
+    </div>
+          
+        </div>
+      </header>
+
+
+      <div className="loginPage">
+        <div className="loginPage__AsideForm">
+          <img src='./loginAside.svg' alt='login__aside' />
+        </div>
+        <div className="login__Form">
+            <div className="formContainer">
+              <h3>Members Login With</h3>
+        
+              <div>
+                <div>
+                    <ul className='formContainer__Social'>
+                        <li className='formContainer__BtnSocial'>
+                            <img src='linkedIn.svg' alt='linkedin' />
+                        </li>
+                        <li className='formContainer__BtnSocial'>
+                            <img src='gmail.svg' alt='Gmail' />
+                        </li>
+                        <li className='formContainer__BtnSocial'>
+                            <img src='twitter.svg' alt='Twitter' />
+                        </li>
+                        <li className='formContainer__BtnSocial'>
+                            <img src='facebook.svg' alt='Facebook' />
+                        </li>
+                    </ul>
+                </div>
+              </div>
+              <div>
+                <form className="formContainer__form" onSubmit={onLogin}>
+                  <div className="form__item">
+                    <Label> Email Address </Label>
+                    <Input
+                      inputType="email"
+                      inputId="email"
+                      inputName="email"
+                      inputPlaceholder="awesomeuser@mymail.com"
+                      onChange={inputFiller}
+                      value={user.email}
+                    />
+                    <ErrorText
+                      errorItem={
+                        validationErrors?.email ? validationErrors.email : null
+                      }
+                    />
+                  </div>
+        
+                  <div className="form__item">
+                    <Label> Password </Label>
+                    <Password
+                      onChange={inputFiller}
+                      name="password"
+                      value={user.password}
+                    />
+                    <ErrorText
+                      errorItem={
+                        validationErrors?.password ? validationErrors.password : null
+                      }
+                    />
+                  </div>
+                  <div className="loginform__ForgetPassword">
+                    <span
+                      onClick={(1)}
+                      className="blueColor"
+                    >
+                      Forgot password?
+                    </span>
+                  </div>
+                  <div className="formContainer__btnDiv">
+                    <Button btnText="Login" btnType="submit" />
+                  </div>
+                </form>
+                <div className="formContainer__otherLink">
+                  <span>
+                    Not a member? <Link to={SIGNUP_ROUTE}>Sign up now</Link>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+</body>
+</html>
